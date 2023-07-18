@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./BlueHeader.css";
 import { Images } from "../../../Assests/Constant";
 import { Drawer, Button } from "antd";
-import { MenuFoldOutlined,MenuUnfoldOutlined } from "@ant-design/icons";
+import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 
 const BlueHeader = () => {
   const [menuKey, setMenuKey] = useState("home");
@@ -140,6 +140,12 @@ const BlueHeader = () => {
         closeIcon={false}
         destroyOnClose={true}
         onClose={() => setIsDrawerOpen(!isDrawerOpen)}
+        bodyStyle={{
+          padding: "0%",
+          marginTop: "-7%",
+          background: "#337ab7",
+        }}
+        headerStyle={{ padding: "0%" }}
       >
         <div className="blueMenuItem">
           {items.map((item) => {
