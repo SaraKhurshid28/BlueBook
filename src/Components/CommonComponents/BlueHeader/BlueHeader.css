@@ -1,0 +1,412 @@
+.blueContactSocialConatiner{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.blueContactConatiner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.blueItemConatiner{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    
+}
+
+.blueItemText{
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 20px;
+
+}
+
+.blueSocialContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+}
+
+.blueSoicalImageSize{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+
+.blueMenuContainer{
+    width: 100%;
+    height: 100px;
+    background-color: #337ab7;
+    margin-top: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blueMenuItem{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    margin-left: 3%;
+}
+
+.blueMenuItemStyle{
+    color: white;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blueMenuItemSelectedStyle{
+    color: white;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 900; 
+    text-decoration: underline;
+    background-color: black;
+    height: 100px;
+    width: max-content;
+    display: flex;
+    padding: 0px 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.blueMenuImageSize{height: 100px;}
+
+.blueMenuButton{
+    background-color: red;
+    width: 160px;
+    height: 100%;
+    margin-left: 1%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .blueContactConatiner{
+        justify-content: center;
+    }
+
+    .blueSocialContainer{
+        margin-right: 20px;
+    }
+
+    .blueSoicalImageSize{
+        width: 12px;
+        height: 12px;
+        margin-left: 5px;
+    }
+
+    .blueItemConatiner{
+       margin-left: 5px;
+    }
+    
+    .blueItemText{
+      font-size: 10px;
+      margin-left: 10px;
+    }
+    
+    /* menu */
+
+
+
+.blueMenuContainer{
+    width: max-content;
+    background-color: #337ab7;
+    margin-top: 0.5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: auto;
+}
+
+.blueMenuItem{
+    display: flex;
+    width: max-content;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 3%;
+    background-color: #337ab7;
+    flex-direction: column;
+}
+
+.blueMenuItemStyle{
+    color: white;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blueMenuItemSelectedStyle{
+    color: white;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 900; 
+    text-decoration: underline;
+    background-color: black;
+    height: 100px;
+    width: max-content;
+    display: flex;
+    padding: 0px 5px;
+    justify-content: center;
+    align-items: center;
+}
+.blueMenuImageSize{width: 100px;
+height: 100px;
+}
+
+.blueMenuButton{
+    background-color: red;
+    width: 100px;
+    height: 100%;
+    margin-left: 1%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+} 
+/* .blueMenuItem{
+    display: flex;
+    width: max-content;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 3%;
+    background-color: #337ab7;
+}
+
+.blueMenuItemStyle{
+    color: white;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blueMenuItemSelectedStyle{
+    color: white;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 900; 
+    text-decoration: underline;
+    background-color: black;
+    height: 100px;
+    width: max-content;
+    display: flex;
+    padding: 0px 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.blueMenuImageSize{height: 100px;}
+
+.blueMenuButton{
+    background-color: red;
+    width: 160px;
+    height: 100%;
+    margin-left: 1%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+} */
+
+    
+}
+
+@media screen and (min-width: 501px) and (max-width: 650px) {
+
+    .blueSocialContainer{
+        margin-right: 20px;
+    }
+
+    .blueSoicalImageSize{
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+    }
+
+    .blueItemConatiner{
+        margin-left: 5px;
+    }
+    
+    .blueItemText{
+      font-size: 12px;
+      margin-left: 10px;
+
+    }
+
+    .blueMenuContainer{
+        height: 70px;     
+    }
+
+    .blueMenuItemStyle{
+        font-size: 10px;  
+    }
+
+    .blueMenuItemSelectedStyle{
+        font-size: 10px;
+        height: 70px;     
+
+    }
+
+   .blueMenuImageSize{height: 70px;}
+
+    .blueMenuButton{
+        width: 100px;
+        font-size: 10px;
+        padding: 0% 4px;
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 820px) {
+
+    .blueSoicalImageSize{
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+
+    .blueItemConatiner{
+        margin-left: 10px;  
+    }
+    
+    .blueItemText{
+      font-size: 18px;
+      margin-left: 10px;
+
+    }
+
+    .blueMenuContainer{
+        height: 70px;     
+    }
+
+    .blueMenuItemStyle{
+        font-size: 14px;  
+    }
+
+    .blueMenuItemSelectedStyle{
+        font-size: 14px;
+        height: 70px;     
+
+    }
+
+   .blueMenuImageSize{height: 70px;}
+
+    .blueMenuButton{
+        width: 100px;
+        font-size: 14px;
+        padding: 0% 4px;
+    }
+}
+
+@media screen and (min-width: 821px) and (max-width: 950px) {
+ 
+    .blueSoicalImageSize{
+        margin-left: 10px;
+    }
+
+    .blueMenuItemStyle{
+        font-size: 16px;  
+    }
+
+    .blueMenuItemSelectedStyle{
+        font-size: 16px;
+        height: 80px;     
+    }
+
+    .blueMenuImageSize{height: 80px;}
+
+    .blueMenuContainer{
+        height: 80px;     
+    }
+
+    .blueMenuButton{
+        font-size: 14px;
+        width: 100px;
+        margin-left: 3%;
+    }
+
+}
+
+
+@media screen and (min-width: 951px) and (max-width: 1100px) {
+ 
+    .blueSoicalImageSize{
+        margin-left: 10px;
+    }
+
+
+    .blueMenuContainer{
+        height: 80px;     
+    }
+
+    .blueMenuItemStyle{
+        font-size: 18px;  
+    }
+
+    .blueMenuItemSelectedStyle{
+        font-size: 18px;
+        height: 80px;
+    }
+
+    .blueMenuButton{
+        width: 100px;
+        font-size: 14px;
+        font-weight: bolder;
+      
+    }
+
+   .blueMenuImageSize{height: 80px;}
+ 
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1280px) {
+
+    .blueSoicalImageSize{
+        margin-left: 10px;
+    }
+
+ 
+}

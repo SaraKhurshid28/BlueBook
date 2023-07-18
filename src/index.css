@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.appColor{
+  color: #337AB7;
+}
+
+.appJustifyAlignCenterItem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appAligCenterItem{
+  display: flex;
+  align-items: center;
+}
+
+.appJustifyCenterItem{
+  display: flex;
+  justify-content: center;
+}
+
+p{
+  margin: 0%;
+  padding: 0%;
+}
+

@@ -1,5 +1,7 @@
+import { BlueHeader } from "./Components/CommonComponents";
+
 function App() {
-  return <div>Working</div>;
+  return <BlueHeader />;
 }
 
 export default App;
