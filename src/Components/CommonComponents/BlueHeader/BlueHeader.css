@@ -47,7 +47,7 @@
 
 .blueMenuContainer{
     width: 100%;
-    height: 100px;
+    height: 50px;
     background-color: #337ab7;
     margin-top: 0.5%;
     display: flex;
@@ -65,7 +65,7 @@
 .blueMenuItemStyle{
     color: white;
     font-family: "Roboto";
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 900;
     display: flex;
     justify-content: center;
@@ -75,11 +75,11 @@
 .blueMenuItemSelectedStyle{
     color: white;
     font-family: "Roboto";
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 900; 
     text-decoration: underline;
     background-color: black;
-    height: 100px;
+    height: 50px;
     width: max-content;
     display: flex;
     padding: 0px 5px;
@@ -87,7 +87,7 @@
     align-items: center;
 }
 
-.blueMenuImageSize{height: 100px;}
+.blueMenuImageSize{height: 50px;}
 
 .blueMenuButton{
     background-color: red;
@@ -98,7 +98,7 @@
     border-bottom-left-radius: 20px;
     color: white;
     font-family: "Roboto";
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 900;
     display: flex;
     justify-content: center;
@@ -197,6 +197,10 @@
     text-align: center;
 } 
 
+.blueMenuImageSize{
+    height: 100px;
+}
+
     
 }
 
@@ -222,9 +226,9 @@
 
     }
 
-    .blueMenuContainer{
-        height: 70px;     
-    }
+    /* .blueMenuContainer{
+        height: px;     
+    } */
 
     .blueMenuItemStyle{
         font-size: 10px;  
@@ -232,11 +236,11 @@
 
     .blueMenuItemSelectedStyle{
         font-size: 10px;
-        height: 70px;     
+        height: 50px;     
 
     }
 
-   .blueMenuImageSize{height: 70px;}
+   .blueMenuImageSize{height: 50px;}
 
     .blueMenuButton{
         width: 100px;
@@ -263,9 +267,9 @@
 
     }
 
-    .blueMenuContainer{
+    /* .blueMenuContainer{
         height: 70px;     
-    }
+    } */
 
     .blueMenuItemStyle{
         font-size: 14px;  
@@ -273,11 +277,11 @@
 
     .blueMenuItemSelectedStyle{
         font-size: 14px;
-        height: 70px;     
+        height: 50px;     
 
     }
 
-   .blueMenuImageSize{height: 70px;}
+   .blueMenuImageSize{height: 50px;}
 
     .blueMenuButton{
         width: 100px;
@@ -298,14 +302,14 @@
 
     .blueMenuItemSelectedStyle{
         font-size: 16px;
-        height: 80px;     
+        height: 50px;     
     }
 
-    .blueMenuImageSize{height: 80px;}
+    .blueMenuImageSize{height: 50px;}
 
-    .blueMenuContainer{
+    /* .blueMenuContainer{
         height: 80px;     
-    }
+    } */
 
     .blueMenuButton{
         font-size: 14px;
@@ -323,9 +327,9 @@
     }
 
 
-    .blueMenuContainer{
+    /* .blueMenuContainer{
         height: 80px;     
-    }
+    } */
 
     .blueMenuItemStyle{
         font-size: 18px;  
@@ -333,17 +337,17 @@
 
     .blueMenuItemSelectedStyle{
         font-size: 18px;
-        height: 80px;
+        height: 50px;
     }
 
     .blueMenuButton{
         width: 100px;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: bolder;
       
     }
 
-   .blueMenuImageSize{height: 80px;}
+   .blueMenuImageSize{height: 50px;}
  
 }
 
