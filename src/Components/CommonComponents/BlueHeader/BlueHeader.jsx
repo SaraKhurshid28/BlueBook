@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./BlueHeader.css";
 import { Images } from "../../../Assests/Constant";
+import { Drawer, Button } from "antd";
+import { MenuFoldOutlined,MenuUnfoldOutlined } from "@ant-design/icons";
 
 const BlueHeader = () => {
   const [menuKey, setMenuKey] = useState("home");
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const items = [
     {
@@ -16,7 +19,7 @@ const BlueHeader = () => {
     },
     {
       label: "About Us",
-      key: "aboutus",
+      key: "about Us",
     },
     {
       label: "Testimonials",
@@ -24,7 +27,7 @@ const BlueHeader = () => {
     },
     {
       label: "Work Sample",
-      key: "workSample",
+      key: "work Sample",
     },
     {
       label: "Estimating Fees",
@@ -35,6 +38,8 @@ const BlueHeader = () => {
       key: "payment",
     },
   ];
+
+  useEffect(() => {});
 
   return (
     <>
@@ -47,7 +52,7 @@ const BlueHeader = () => {
                 className="blueSoicalImageSize"
                 alt="phone"
               />
-              <p className="blueItemText"> +1 917 300 1079</p>
+              <p className="blueItemText"> +1 (718) 717 8306 </p>
             </div>
             <div className="blueItemConatiner">
               <img
@@ -55,7 +60,7 @@ const BlueHeader = () => {
                 className="blueSoicalImageSize"
                 alt="email"
               />
-              <p className="blueItemText"> bluebookestimators@gmail.com</p>
+              <p className="blueItemText">bluebookestimators@gmail.com</p>
             </div>
           </div>
           <div className="blueSocialContainer">
@@ -109,7 +114,57 @@ const BlueHeader = () => {
             <p>Upload Your Plan Here</p>
           </div>
         </div>
+
+        <div>
+          <Button
+            className="mobDrawerButton"
+            type="primary"
+            onClick={() => setIsDrawerOpen(!isDrawerOpen)}
+          >
+            {isDrawerOpen ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+          </Button>
+        </div>
+
+        <div className="tempClass appJustifyAlignCenterItem">
+          <h1>{menuKey.toLocaleUpperCase()}</h1>
+        </div>
       </div>
+
+      <Drawer
+        title={
+          <img src={Images.logo} alt="logo" className="blueMenuImageSize" />
+        }
+        placement="left"
+        width={130}
+        open={isDrawerOpen}
+        closeIcon={false}
+        destroyOnClose={true}
+        onClose={() => setIsDrawerOpen(!isDrawerOpen)}
+      >
+        <div className="blueMenuItem">
+          {items.map((item) => {
+            return (
+              <p
+                className={
+                  menuKey === item.key
+                    ? "blueMenuItemSelectedStyle"
+                    : "blueMenuItemStyle"
+                }
+                key={item.key}
+                onClick={() => {
+                  setMenuKey(item.key);
+                }}
+              >
+                {item.label}
+              </p>
+            );
+          })}
+        </div>
+
+        <div className="blueMenuButton">
+          <p>Upload Your Plan Here</p>
+        </div>
+      </Drawer>
     </>
   );
 };

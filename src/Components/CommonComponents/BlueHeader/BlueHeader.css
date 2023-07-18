@@ -1,3 +1,8 @@
+.tempClass{
+    height: 70vh;
+    color: black;
+}
+
 .blueContactSocialConatiner{
     display: flex;
     width: 100%;
@@ -102,6 +107,10 @@
     text-transform: uppercase;
 }
 
+.mobDrawerButton{
+    display: none;
+}
+
 
 @media screen and (max-width: 500px) {
 
@@ -130,17 +139,18 @@
     
     /* menu */
 
-
+.mobDrawerButton{
+    display: flex;
+    margin-top:3%;
+    justify-content: center;
+    align-items: center;
+    background-color: #337ab7;
+    color: black;
+    border-radius: 0% !important;
+}
 
 .blueMenuContainer{
-    width: max-content;
-    background-color: #337ab7;
-    margin-top: 0.5%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    height: auto;
+    display: none;
 }
 
 .blueMenuItem{
@@ -148,109 +158,44 @@
     width: max-content;
     justify-content: flex-start;
     flex-direction: column;
-    margin-left: 3%;
+    align-items: center;
+    margin-left: 0%;
     background-color: #337ab7;
     flex-direction: column;
+    padding-top: 5px ;
+    width: 120px;
+
 }
 
 .blueMenuItemStyle{
-    color: white;
-    font-family: "Roboto";
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    height: 50px;
+    padding: 10%;   
 }
 
 .blueMenuItemSelectedStyle{
-    color: white;
-    font-family: "Roboto";
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 900; 
-    text-decoration: underline;
-    background-color: black;
-    height: 100px;
-    width: max-content;
-    display: flex;
-    padding: 0px 5px;
-    justify-content: center;
-    align-items: center;
-}
-.blueMenuImageSize{width: 100px;
-height: 100px;
+    height: 50px;
+    width: 130px;
+    padding:10%;
+    text-align: center;
 }
 
+
 .blueMenuButton{
-    background-color: red;
-    width: 100px;
-    height: 100%;
-    margin-left: 1%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    color: white;
-    font-family: "Roboto";
-    font-size: 22px;
+    width: 130px;
+    height: max-content;
+    margin-left: 0%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-size: 14px;
     font-weight: 900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px 0px;
     text-align: center;
-    text-transform: uppercase;
 } 
-/* .blueMenuItem{
-    display: flex;
-    width: max-content;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-left: 3%;
-    background-color: #337ab7;
-}
-
-.blueMenuItemStyle{
-    color: white;
-    font-family: "Roboto";
-    font-size: 22px;
-    font-weight: 900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.blueMenuItemSelectedStyle{
-    color: white;
-    font-family: "Roboto";
-    font-size: 22px;
-    font-weight: 900; 
-    text-decoration: underline;
-    background-color: black;
-    height: 100px;
-    width: max-content;
-    display: flex;
-    padding: 0px 5px;
-    justify-content: center;
-    align-items: center;
-}
-
-.blueMenuImageSize{height: 100px;}
-
-.blueMenuButton{
-    background-color: red;
-    width: 160px;
-    height: 100%;
-    margin-left: 1%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    color: white;
-    font-family: "Roboto";
-    font-size: 22px;
-    font-weight: 900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-} */
 
     
 }
@@ -409,4 +354,16 @@ height: 100px;
     }
 
  
+}
+/* 
+ant class changes */
+:where(.css-dev-only-do-not-override-1m62vyb).ant-drawer .ant-drawer-header {
+
+    padding: 0% !important;
+}
+
+:where(.css-dev-only-do-not-override-1m62vyb).ant-drawer .ant-drawer-body{
+    padding: 0% !important;
+    margin-top: -7%;
+    background-color: #337ab7;
 }
