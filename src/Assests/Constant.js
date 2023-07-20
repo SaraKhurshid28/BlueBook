@@ -5,6 +5,7 @@ import insta from "./insta.svg";
 import linkedIn from "./LinkedIn.svg";
 import phone from "./phone.svg";
 import logo from "./logo.svg";
+import home1Image from "./Home1Image.svg";
 
 export const Images = {
   whatsapp,
@@ -14,4 +15,5 @@ export const Images = {
   linkedIn,
   phone,
   logo,
+  home1Image,
 };

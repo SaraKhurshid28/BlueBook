@@ -1,0 +1,225 @@
+
+
+/* Section 1 */
+
+.sec1MainContainer
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5%;
+}
+
+.sec1ContentConatiner
+{
+    padding: 0% 1%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 500px;
+    justify-content: center;
+    font-family: "Roboto";
+}
+
+.sec1Heading
+{
+  font-size: 34px;
+  margin: 15px 0px;
+  color: #337ab7;
+  
+}
+
+.sec1Text
+{
+    font-size: 28px;
+}
+
+.sec1ButtonContainer
+{
+    margin-top: 20px;
+    width: 250px;
+}
+
+.sec1ImageConatiner
+{
+    width: 650px;
+    height: 500px;
+    object-fit: contain;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1450px)
+{
+    /* Section 1 */
+    .sec1Heading
+    {
+        font-size: 24px;
+    }
+        
+    .sec1Text
+    {
+        font-size: 21px;
+    }
+        
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1279px)
+{
+    /* Section 1 */
+
+    .sec1Heading
+    {
+      font-size: 22px;
+    }
+
+    .sec1Text
+    {
+        font-size: 20px;
+    }
+
+    .sec1ImageConatiner
+    {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1100px)
+
+{
+    /* Section 1 */
+
+    .sec1ContentConatiner
+    {
+        height: 400px;
+        padding: 0% 1%;
+    }
+
+    .sec1Heading
+    {
+      font-size: 20px;
+
+    }
+
+    .sec1Text
+    {
+        font-size: 16px;
+    }
+
+    .sec1ImageConatiner
+    {
+        width: 500px;
+        height: 400px;
+    }
+    
+}
+
+@media screen and (min-width: 810px) and (max-width: 1019px)
+
+{
+    /* Section 1 */
+
+    .sec1ContentConatiner
+    {
+        height: 320px;
+        padding: 0% 1%;
+    }
+
+    .sec1Heading
+    {
+      font-size: 16px;
+
+    }
+
+    .sec1Text
+    {
+        font-size: 13px;
+    }
+
+    .sec1ImageConatiner
+    {
+        width: 400px;
+        height: 320px;
+    }
+
+    .sec1ButtonContainer
+    {
+        width: 150px;
+    }
+    
+}
+
+@media screen and (min-width: 600px) and (max-width: 809px)
+
+{
+    /* Section 1 */
+
+    .sec1ContentConatiner
+    {
+        height: 300px;
+        padding: 0% 1%;
+    }
+
+    .sec1Heading
+    {
+      font-size: 14px;
+
+    }
+
+    .sec1Text
+    {
+        font-size: 11px;
+    }
+
+    .sec1ImageConatiner
+    {
+        width: 370px;
+        height: 300px;
+    }
+
+    .sec1ButtonContainer
+    {
+        width: 150px;
+    }
+    
+}
+
+@media screen and (max-width: 599px) 
+{
+    /* Section 1 */
+
+    .sec1MainContainer
+{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+    .sec1ContentConatiner
+    {
+        margin-top: -20px;
+        padding: 0% 1%;
+        height: 300px;
+    }
+
+    .sec1Heading
+    {
+      font-size: 14px;
+    }
+
+    .sec1Text
+    {
+        font-size: 11px;
+    }
+
+    .sec1ImageConatiner
+    {
+        width: 100%;
+        height: 300px;
+    }
+
+    .sec1ButtonContainer
+    {
+        width: 150px;
+    }
+    
+}

@@ -19,7 +19,7 @@ const BlueHeader = () => {
     },
     {
       label: "About Us",
-      key: "about Us",
+      key: "aboutus",
     },
     {
       label: "Testimonials",
@@ -27,7 +27,7 @@ const BlueHeader = () => {
     },
     {
       label: "Work Sample",
-      key: "work Sample",
+      key: "worksample",
     },
     {
       label: "Estimating Fees",
@@ -123,10 +123,6 @@ const BlueHeader = () => {
           >
             {isDrawerOpen ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
           </Button>
-        </div>
-
-        <div className="tempClass appJustifyAlignCenterItem">
-          <h1>{menuKey.toLocaleUpperCase()}</h1>
         </div>
       </div>
 

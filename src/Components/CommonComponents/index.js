@@ -1,3 +1,4 @@
-import BlueHeader from "./BlueHeader";
+import BlueButton from "./BlueButton/BlueButton";
+import BlueHeader from "./BlueHeader/BlueHeader";
 
-export { BlueHeader };
+export { BlueButton, BlueHeader };
