@@ -1,0 +1,27 @@
+.buttonContainer{
+    width: 100%;
+    font-family: "Robot";
+    font-weight: 700;
+    color: White;
+}
+
+.blueButton{
+    background-color: #337ab7 !important;
+    border-color: #337ab7 !important;
+
+}
+
+.redButton{
+    background-color: red !important;
+}
+
+.blackButton{
+    background-color: black;
+    border-color: black !important;
+
+}
+
+.buttonContainer:hover{
+    color: White !important;
+
+}

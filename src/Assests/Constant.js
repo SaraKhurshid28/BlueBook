@@ -5,6 +5,15 @@ import insta from "./insta.svg";
 import linkedIn from "./LinkedIn.svg";
 import phone from "./phone.svg";
 import logo from "./logo.svg";
+import home1Image from "./Home1Image.svg";
+import service1 from "./Services1.svg";
+import service2 from "./Services2.svg";
+import service3 from "./Services3.svg";
+import service4 from "./Services4.svg";
+import service5 from "./Services5.svg";
+import service6 from "./Services6.svg";
+import service7 from "./Services7.svg";
+import service8 from "./Services8.svg";
 
 export const Images = {
   whatsapp,
@@ -14,4 +23,13 @@ export const Images = {
   linkedIn,
   phone,
   logo,
+  home1Image,
+  service1,
+  service2,
+  service3,
+  service4,
+  service5,
+  service6,
+  service7,
+  service8,
 };

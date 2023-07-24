@@ -1,0 +1,351 @@
+.sec2CardStyle{
+    width:23% ;
+    height: 300px;
+    border-radius: 0% ;
+    cursor: pointer;
+    border: 2px solid black;
+
+}
+
+.sec2SelectCardStyle{
+    width:23% ;
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #337ab7;
+}
+
+
+.sec2SelectedCardContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto";
+}
+
+.sec2SelectedCardHeading
+{
+   margin-top: -1%;
+   font-size: 20px;
+   font-weight: 700;
+}
+
+.sec2SelectedCardSubHeading
+{
+   font-size: 14px;
+   font-weight: 600;
+}
+
+.sec2SelectedCardText
+{
+   font-size: 12px;
+   text-align: justify;
+   padding: 3% 4%;
+   font-weight: 400;
+
+}
+
+.sec2SelectedCardButton{
+    width: 25%;
+}
+
+
+
+@media screen and (min-width: 1280px) and (max-width: 1450px)
+{
+    .sec2CardStyle{
+        width:22.5% ;
+        height: 300px;
+
+    }
+    
+    .sec2SelectCardStyle{
+        width:22% ;
+        height: 300px;
+
+        }
+    
+    .sec2SelectedCardHeading
+    {
+       font-size: 18px;
+    }
+    
+    .sec2SelectedCardSubHeading
+    {
+       font-size: 14px;
+    }
+    
+    .sec2SelectedCardText
+    {
+       font-size: 10px;
+    
+    }
+    
+    .sec2SelectedCardButton{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1279px)
+{
+    /* Section 1 */
+
+    .sec1Heading
+    {
+      font-size: 22px;
+    }
+
+    .sec1Text
+    {
+        font-size: 20px;
+    }
+
+    .sec1ImageConatiner
+    {
+        width: 600px;
+    }
+
+       /* section 2 */
+
+       .sec2Heading
+       {
+           font-size: 26px;
+          
+       }
+   
+       .sec2Text
+       {
+           font-size: 24px;
+       }
+   
+       
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1100px)
+
+{
+    /* Section 1 */
+
+    .sec1ContentConatiner
+    {
+        height: 400px;
+        padding: 0% 1%;
+    }
+
+    .sec1Heading
+    {
+      font-size: 20px;
+
+    }
+
+    .sec1Text
+    {
+        font-size: 16px;
+    }
+
+    .sec1ImageConatiner
+    {
+        width: 500px;
+        height: 400px;
+    }
+
+    /* section 2 */
+
+    .sec2Heading
+    {
+        font-size: 26px;
+        
+    }
+
+    .sec2Text
+    {
+        font-size: 24px;
+    }
+
+       
+}
+
+@media screen and (min-width: 810px) and (max-width: 1019px)
+
+{
+    /* Section 1 */
+
+    .sec1ContentConatiner
+    {
+        height: 320px;
+        padding: 0% 1%;
+    }
+
+    .sec1Heading
+    {
+      font-size: 16px;
+
+    }
+
+    .sec1Text
+    {
+        font-size: 13px;
+    }
+
+    .sec1ImageConatiner
+    {
+        width: 400px;
+        height: 320px;
+    }
+
+    .sec1ButtonContainer
+    {
+        width: 150px;
+    }
+
+    /* section 2 */
+
+    .sec2Heading
+    {
+        font-size: 24px;
+        
+    }
+
+    .sec2Text
+    {
+        font-size: 20px;
+    }
+
+    .sec2ButtonContainer
+    {
+        width: 150px;
+    }
+    
+}
+
+@media screen and (min-width: 600px) and (max-width: 809px)
+
+{
+    /* Section 1 */
+
+    .sec1ContentConatiner
+    {
+        height: 300px;
+        padding: 0% 1%;
+    }
+
+    .sec1Heading
+    {
+      font-size: 14px;
+
+    }
+
+    .sec1Text
+    {
+        font-size: 11px;
+    }
+
+    .sec1ImageConatiner
+    {
+        width: 370px;
+        height: 300px;
+    }
+
+    .sec1ButtonContainer
+    {
+        width: 150px;
+    }
+
+    /* section 2 */
+
+    .sec2Heading
+    {
+        font-size: 22px;
+        
+    }
+
+    .sec2Text
+    {
+        font-size: 19px;
+    }
+
+    .sec2ButtonContainer
+    {
+        width: 150px;
+    }
+    
+}
+
+@media screen and (max-width: 599px) 
+{
+    /* Section 1 */
+
+    .sec1MainContainer
+{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+    .sec1ContentConatiner
+    {
+        margin-top: -20px;
+        padding: 0% 1%;
+        height: 300px;
+    }
+
+    .sec1Heading
+    {
+      font-size: 14px;
+    }
+
+    .sec1Text
+    {
+        font-size: 11px;
+    }
+
+    .sec1ImageConatiner
+    {
+        width: 100%;
+        height: 300px;
+    }
+
+    .sec1ButtonContainer
+    {
+        width: 150px;
+    }
+
+    /* section 2 */
+        
+    .sec2MainContainer
+    {
+        justify-content: center;
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .sec2TextContainer
+    {
+        width: 92%;
+    }
+
+    .sec2Heading
+    {
+        font-size: 28px;
+    }
+
+    .sec2Text
+    {
+        font-size: 20px;
+
+    }
+
+    .sec2ServicesCardContainer{
+        width: 100%;
+        border: 1px solid pink;
+    }
+
+    .sec2ButtonContainer
+    {
+        margin-top: 20px;
+        width: 150px;
+    }
+    
+}
