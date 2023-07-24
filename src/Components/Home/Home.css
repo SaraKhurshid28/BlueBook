@@ -53,7 +53,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    height: 700px
+    height: max-content;
 }
 
 .sec2TextContainer
@@ -100,6 +100,94 @@
     width: 250px;
 }
 
+/* section 3 */
+
+.sec3MainConatiner{
+    height: 500px;
+    border-radius: 10px;
+    background-image: url("../../Assests/homeSection3.svg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec3Heading{
+    font-size: 92px;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+
+.sec3HeadingLine{
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 33%;
+    margin-top: -5px;
+}
+
+.sec3Text{
+    font-size: 32px;
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+.sec3ButtonContainer
+{
+    margin-top: 30px;
+    width: 250px;
+}
+
+/* section 4 */
+
+.sec4MainContainer{
+    height: 200px;
+    padding: 10px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec4Heading{
+    color: #337ab7;
+    font-size: 42px;
+    padding-top: 1%;
+}
+
+.sec4HeadingLine{
+    border: 2px solid #337ab7;
+    border-radius: 5px;
+    width: 8%;
+    margin-top: 15px;
+}
+
+.sec4ClientContainer{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ margin-top: 20px;
+}
+
+.sec4EachItem{
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 500;
+    padding: 20px;
+    width: 200;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid #337ab7;
+    background-color: #337ab7;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+
 @media screen and (min-width: 1280px) and (max-width: 1450px)
 {
     /* Section 1 */
@@ -129,6 +217,21 @@
     .sec2ButtonContainer{
 
         margin-top: 30px;
+    }
+
+    /* section 3 */
+    .sec3HeadingLine{
+        width: 42%;
+    }
+    
+    .sec3Text{
+        font-size: 30px;
+    }
+
+    /* section 4 */
+    
+    .sec4EachItem{
+        margin-bottom: 20px;
     }
         
 }
@@ -164,6 +267,22 @@
        {
            font-size: 24px;
        }
+
+    /* section 3 */
+    
+     .sec3HeadingLine{
+        width: 47%;
+    }
+    
+    .sec3Text{
+        font-size: 28px;
+    }
+
+       /* section 4 */
+    
+   .sec4EachItem{
+        margin-bottom: 20px;
+    }
    
        
 }
@@ -209,6 +328,27 @@
         font-size: 24px;
     }
 
+    /* section 3 */
+    .sec3Heading{
+        font-size: 80px;
+    }
+    
+    .sec3HeadingLine{
+        width: 48%;
+    }
+    
+    .sec3Text{
+        font-size: 28px;
+    }
+
+    /* section 4 */
+    
+   .sec4EachItem{
+    margin-bottom: 20px;
+}
+
+
+    
        
 }
 
@@ -262,6 +402,27 @@
     {
         width: 150px;
     }
+
+    /* section 3 */
+    .sec3Heading{
+    font-size: 80px;
+    }
+    
+    .sec3HeadingLine{
+        width: 62%;
+    }
+    
+    .sec3Text{
+        font-size: 28px;
+    }
+
+    /* section 4 */
+    
+   .sec4EachItem{
+    margin-bottom: 20px;
+}
+
+
     
 }
 
@@ -278,13 +439,13 @@
 
     .sec1Heading
     {
-      font-size: 14px;
+      font-size: 12px;
 
     }
 
     .sec1Text
     {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     .sec1ImageConatiner
@@ -316,6 +477,30 @@
         width: 150px;
     }
     
+    /* section 3 */
+
+    .sec3MainConatiner{
+        height: 300px;
+    }
+
+    .sec3Heading{
+        font-size: 60px;
+    }
+    
+    .sec3HeadingLine{
+        width: 62%;
+        
+    }
+    
+    .sec3Text{
+        font-size: 20px;
+    }
+
+        /* section 4 */
+    
+   .sec4EachItem{
+    margin-bottom: 20px;
+}
 }
 
 @media screen and (max-width: 599px) 
@@ -366,6 +551,7 @@
         justify-content: center;
         flex-direction: column;
         height: max-content;
+        align-items: center;
     }
 
     .sec2TextContainer
@@ -386,6 +572,8 @@
 
     .sec2ServicesCardContainer{
         width: 100%;
+        margin-top: 10px;
+        padding-left: 0px;
     }
 
     .sec2ButtonContainer
@@ -393,5 +581,32 @@
         margin-top: 20px;
         width: 150px;
     }
+
+    /* section 3 */
+
+    .sec3MainConatiner{
+        height: 300px;
+    }
+
+    .sec3Heading{
+        font-size: 50px;
+    }
+    
+    .sec3HeadingLine{
+    border: 2px solid black;
+
+        width: 72%;
+        
+    }
+    
+    .sec3Text{
+        font-size: 16px;
+    }
+
+        /* section 4 */
+    
+   .sec4EachItem{
+    margin-bottom: 20px;
+}
     
 }

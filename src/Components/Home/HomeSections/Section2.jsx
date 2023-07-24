@@ -6,15 +6,6 @@ import { Card } from "antd";
 import { Images } from "../../../Assests/Constant";
 
 const Section2 = () => {
-  const [isLoadingButton, setIsLoadingButton] = useState(false);
-  const [serviceKey, setServiceKey] = useState("");
-  const [isHover, setIsHover] = useState(false);
-  const onClickButton = () => {
-    setIsLoadingButton(true);
-    console.log("Calling From in Section 2");
-    setIsLoadingButton(false);
-  };
-
   const servicesArray = [
     {
       icon: `${Images.service1}`,
@@ -82,9 +73,77 @@ const Section2 = () => {
     },
   ];
 
+  const servicesArray2 = [
+    {
+      icon: `${Images.service1}`,
+      title: "Concrete",
+      description:
+        "Contractors involved within the work onsite for completing the fieldwork and struggle to estimate accurately for bidding proposals. We help them with our accurate estimate report for concrete projects.",
+      key: "service1",
+      subHeading: "",
+    },
+
+    {
+      icon: `${Images.service4}`,
+      title: "Thermal & Moisture",
+      description:
+        "Roofing estimating services the cost of installing new roofing, there are several aspects to consider. Although roofing material counts for a major portion of the cost, you must also consider the number of stories, the complexity of the roof, the slope or pitch etc.",
+      subHeading: "Roofing and Exterior Work",
+      key: "service4",
+    },
+    {
+      icon: `${Images.service5}`,
+      title: "Mechanical",
+      description:
+        "Our mechanical estimating services leverage the best technology and practices to ensure the reliable and precise cost analysis of your projects",
+      key: "service5",
+      subHeading: "MEP",
+    },
+    {
+      icon: `${Images.service6}`,
+      title: "Electrical",
+      description:
+        "We are aware of how crucial precise electrical cost estimation is to the success of any project, we use the most up-to-date software and technologies to generate these estimates.",
+      key: "service6",
+      subHeading: "MEP",
+    },
+    {
+      icon: `${Images.service7}`,
+      title: "Plumbing",
+      description:
+        "Plumbers don’t have time and hands-on expertise to overview the drawings and plans to check whether the plans will work in the working environment or not. For this, our estimators take extra time to review and make corrective changes.",
+      key: "service7",
+      subHeading: "MEP",
+    },
+    {
+      icon: `${Images.service8}`,
+      title: "Cost Estimation",
+      description:
+        "We Understand it is most hectic and time consuming but important task for any construction team. So, We provide you best team for project estimation",
+      key: "service8",
+      subHeading: "Labour & Material",
+    },
+  ];
+
+  const [isLoadingButton, setIsLoadingButton] = useState(false);
+  const [serviceKey, setServiceKey] = useState("");
+  const [cardArray, setCardArray] = useState(servicesArray2);
+
+  const onClickButton = () => {
+    setIsLoadingButton(true);
+    console.log("Calling From in Section 2");
+    setIsLoadingButton(false);
+  };
+
+  const handleResize = () => {
+    if (window.innerWidth > 1500) setCardArray(servicesArray);
+    else setCardArray(servicesArray2);
+  };
+
   useEffect(() => {
-    console.log(serviceKey);
-  }, [serviceKey]);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  });
 
   return (
     <>
@@ -113,41 +172,7 @@ const Section2 = () => {
           </div>
         </div>
         <div className="sec2ServicesCardContainer">
-          {servicesArray.map((item) => {
-            // return (
-            //   <Card
-            //     key={item.key}
-            //     className="sec2SelectCardStyle"
-            //     onMouseLeave={() => setServiceKey("")}
-            //     bodyStyle={{ padding: "0px" }}
-            //   >
-            //     <div className="sec2SelectedCardContainer">
-            //       <img
-            //         src={item.icon}
-            //         height={100}
-            //         width={100}
-            //         alt={item.title}
-            //       />
-            //       <h2 className="sec2SelectedCardHeading">{item.title}</h2>
-            //       {item.subHeading != "" ? (
-            //         <h3 className="sec2SelectedCardSubHeading">
-            //           {item.subHeading}
-            //         </h3>
-            //       ) : (
-            //         ""
-            //       )}
-            //       <p className="sec2SelectedCardText">{item.description}</p>
-            //       <div className="sec2SelectedCardButton">
-            //         <BlueButton
-            //           text={"Read More"}
-            //           height={25}
-            //           buttonBackground={"blue"}
-            //           size={10}
-            //         />
-            //       </div>
-            //     </div>
-            //   </Card>
-            // );
+          {cardArray.map((item) => {
             return (
               <>
                 {item.key === serviceKey ? (
@@ -160,12 +185,11 @@ const Section2 = () => {
                     <div className="sec2SelectedCardContainer">
                       <img
                         src={item.icon}
-                        height={100}
-                        width={100}
+                        className="sec2SelectedCardImageSize"
                         alt={item.title}
                       />
                       <h2 className="sec2SelectedCardHeading">{item.title}</h2>
-                      {item.subHeading != "" ? (
+                      {item.subHeading !== "" ? (
                         <h3 className="sec2SelectedCardSubHeading">
                           {item.subHeading}
                         </h3>
@@ -189,12 +213,12 @@ const Section2 = () => {
                     hoverable
                     className="sec2CardStyle"
                     onMouseMove={() => setServiceKey(item.key)}
+                    bodyStyle={{ padding: "0px" }}
                   >
                     <div className="sec2SelectedCardContainer">
                       <img
                         src={item.icon}
-                        height={200}
-                        width={250}
+                        className="sec2CardImage"
                         alt={item.title}
                       />
                       <h2 className="sec2SelectedCardHeading">{item.title}</h2>

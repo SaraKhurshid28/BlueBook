@@ -34,6 +34,7 @@
 {
    font-size: 14px;
    font-weight: 600;
+   text-align: center;
 }
 
 .sec2SelectedCardText
@@ -49,19 +50,30 @@
     width: 25%;
 }
 
+.sec2CardImage{
+    width: 250px;
+    height: 200px;
+}
+
+.sec2SelectedCardImageSize{
+    width: 100px;
+    height: 100px;
+}
 
 
 @media screen and (min-width: 1280px) and (max-width: 1450px)
 {
     .sec2CardStyle{
-        width:22.5% ;
-        height: 300px;
+        width:30% ;
+        height: 280px;
+        margin-bottom: 10px;
 
     }
     
     .sec2SelectCardStyle{
-        width:22% ;
-        height: 300px;
+        width:30% ;
+        height: 280px;
+        margin-bottom: 10px;
 
         }
     
@@ -88,264 +100,228 @@
 
 @media screen and (min-width: 1101px) and (max-width: 1279px)
 {
-    /* Section 1 */
+    .sec2CardStyle{
+        width:32% ;
+        height: 280px;
+        margin-bottom: 10px;
 
-    .sec1Heading
+    }
+    
+    .sec2SelectCardStyle{
+        width:32% ;
+        height: 280px;
+        margin-bottom: 10px;
+
+        }
+    
+    .sec2SelectedCardHeading
     {
-      font-size: 22px;
+       font-size: 18px;
+    }
+    
+    .sec2SelectedCardSubHeading
+    {
+       font-size: 14px;
+    }
+    
+    .sec2SelectedCardText
+    {
+       font-size: 10px;
+    
+    }
+    
+    .sec2SelectedCardButton{
+        width: 50%;
     }
 
-    .sec1Text
-    {
-        font-size: 20px;
+    .sec2CardImage{
+        width: 200px;
+        height: 200px;
     }
-
-    .sec1ImageConatiner
-    {
-        width: 600px;
-    }
-
-       /* section 2 */
-
-       .sec2Heading
-       {
-           font-size: 26px;
-          
-       }
-   
-       .sec2Text
-       {
-           font-size: 24px;
-       }
-   
        
 }
 
 @media screen and (min-width: 1020px) and (max-width: 1100px)
 
 {
-    /* Section 1 */
-
-    .sec1ContentConatiner
-    {
-        height: 400px;
-        padding: 0% 1%;
-    }
-
-    .sec1Heading
-    {
-      font-size: 20px;
+    .sec2CardStyle{
+        width:32% ;
+        height: 280px;
+        margin-bottom: 10px;
 
     }
+    
+    .sec2SelectCardStyle{
+        width:32% ;
+        height: 280px;
+        margin-bottom: 10px;
 
-    .sec1Text
+        }
+    
+    .sec2SelectedCardHeading
     {
-        font-size: 16px;
+       font-size: 18px;
+    }
+    
+    .sec2SelectedCardSubHeading
+    {
+       font-size: 14px;
+    }
+    
+    .sec2SelectedCardText
+    {
+       font-size: 10px;
+    
+    }
+    
+    .sec2SelectedCardButton{
+        width: 50%;
     }
 
-    .sec1ImageConatiner
-    {
-        width: 500px;
-        height: 400px;
+    .sec2CardImage{
+        width: 200px;
+        height: 200px;
     }
-
-    /* section 2 */
-
-    .sec2Heading
-    {
-        font-size: 26px;
-        
-    }
-
-    .sec2Text
-    {
-        font-size: 24px;
-    }
-
-       
+              
 }
 
 @media screen and (min-width: 810px) and (max-width: 1019px)
 
 {
-    /* Section 1 */
+    .sec2CardStyle{
+        width:45% ;
+        height: 200px;
+        margin-bottom: 10px;
 
-    .sec1ContentConatiner
-    {
-        height: 320px;
-        padding: 0% 1%;
-    }
-
-    .sec1Heading
-    {
-      font-size: 16px;
-
-    }
-
-    .sec1Text
-    {
-        font-size: 13px;
-    }
-
-    .sec1ImageConatiner
-    {
-        width: 400px;
-        height: 320px;
-    }
-
-    .sec1ButtonContainer
-    {
-        width: 150px;
-    }
-
-    /* section 2 */
-
-    .sec2Heading
-    {
-        font-size: 24px;
-        
-    }
-
-    .sec2Text
-    {
-        font-size: 20px;
-    }
-
-    .sec2ButtonContainer
-    {
-        width: 150px;
     }
     
+    .sec2SelectCardStyle{
+        width:45% ;
+        height: 200px;
+        margin-bottom: 10px;
+        }
+    
+    .sec2SelectedCardHeading
+    {
+       font-size: 12px;
+    }
+    
+    .sec2SelectedCardSubHeading
+    {
+       font-size: 10px;
+    }
+    
+    .sec2SelectedCardText
+    {
+       font-size: 8px;
+    
+    }
+    
+    .sec2SelectedCardButton{
+        width: 50%;
+    }
+
+    .sec2CardImage{
+        width: 150px;
+        height: 150px;
+    }
+
+    .sec2SelectedCardImageSize{
+        width: 65px;
+        height: 65px;
+    }
 }
 
 @media screen and (min-width: 600px) and (max-width: 809px)
 
+{  .sec2CardStyle{
+    width:45% ;
+    height: 200px;
+    margin-bottom: 10px;
+
+}
+
+.sec2SelectCardStyle{
+    width:45% ;
+    height: 200px;
+    margin-bottom: 10px;
+    }
+
+.sec2SelectedCardHeading
 {
-    /* Section 1 */
+   font-size: 12px;
+}
 
-    .sec1ContentConatiner
-    {
-        height: 300px;
-        padding: 0% 1%;
-    }
+.sec2SelectedCardSubHeading
+{
+   font-size: 10px;
+}
 
-    .sec1Heading
-    {
-      font-size: 14px;
+.sec2SelectedCardText
+{
+   font-size: 8px;
 
-    }
+}
 
-    .sec1Text
-    {
-        font-size: 11px;
-    }
+.sec2SelectedCardButton{
+    width: 50%;
+}
 
-    .sec1ImageConatiner
-    {
-        width: 370px;
-        height: 300px;
-    }
+.sec2CardImage{
+    width: 150px;
+    height: 150px;
+}
 
-    .sec1ButtonContainer
-    {
-        width: 150px;
-    }
-
-    /* section 2 */
-
-    .sec2Heading
-    {
-        font-size: 22px;
-        
-    }
-
-    .sec2Text
-    {
-        font-size: 19px;
-    }
-
-    .sec2ButtonContainer
-    {
-        width: 150px;
-    }
+.sec2SelectedCardImageSize{
+    width: 50px;
+    height: 50px;
+}
     
 }
 
 @media screen and (max-width: 599px) 
 {
-    /* Section 1 */
-
-    .sec1MainContainer
-{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-}
-
-    .sec1ContentConatiner
-    {
-        margin-top: -20px;
-        padding: 0% 1%;
-        height: 300px;
+    .sec2CardStyle{
+        width:45% ;
+        height: 170px;
+        margin-bottom: 10px;
+    
     }
-
-    .sec1Heading
+    
+    .sec2SelectCardStyle{
+        width:45% ;
+        height: 170px;
+        margin-bottom: 10px;
+        }
+    
+    .sec2SelectedCardHeading
     {
-      font-size: 14px;
+       font-size: 12px;
     }
-
-    .sec1Text
+    
+    .sec2SelectedCardSubHeading
     {
-        font-size: 11px;
+       font-size: 8px;
     }
-
-    .sec1ImageConatiner
+    
+    .sec2SelectedCardText
     {
-        width: 100%;
-        height: 300px;
+       font-size: 6px;
+    
     }
-
-    .sec1ButtonContainer
-    {
-        width: 150px;
+    
+    .sec2SelectedCardButton{
+        width: 50%;
     }
-
-    /* section 2 */
-        
-    .sec2MainContainer
-    {
-        justify-content: center;
-        flex-direction: column;
-        height: max-content;
+    
+    .sec2CardImage{
+        width: 130px;
+        height: 130px;
     }
-
-    .sec2TextContainer
-    {
-        width: 92%;
-    }
-
-    .sec2Heading
-    {
-        font-size: 28px;
-    }
-
-    .sec2Text
-    {
-        font-size: 20px;
-
-    }
-
-    .sec2ServicesCardContainer{
-        width: 100%;
-        border: 1px solid pink;
-    }
-
-    .sec2ButtonContainer
-    {
-        margin-top: 20px;
-        width: 150px;
+    
+    .sec2SelectedCardImageSize{
+        width: 50px;
+        height: 50px;
     }
     
 }
