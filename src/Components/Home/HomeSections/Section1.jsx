@@ -8,7 +8,7 @@ const Section1 = () => {
 
   const onClickButton = () => {
     setIsLoadingButton(true);
-    console.log("Working ");
+    console.log("Calling From in Section 1");
     setIsLoadingButton(false);
   };
 
@@ -41,6 +41,8 @@ const Section1 = () => {
                 height={window.innerWidth > 1020 ? 60 : 40}
                 buttonBackground={"blue"}
                 onClick={onClickButton}
+                size={20}
+
               />
             </div>
           </div>

@@ -3,11 +3,11 @@
     font-family: "Robot";
     font-weight: 700;
     color: White;
-    font-size: 20px;
 }
 
 .blueButton{
     background-color: #337ab7 !important;
+    border-color: #337ab7 !important;
 
 }
 
@@ -17,6 +17,8 @@
 
 .blackButton{
     background-color: black;
+    border-color: black !important;
+
 }
 
 .buttonContainer:hover{

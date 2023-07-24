@@ -6,6 +6,8 @@ const BlueButton = (props) => {
       <Button
         style={{
           height: `${props.height}px`,
+          fontSize: `${props.size}px`,
+
         }}
         className={`${
           props.buttonBackground === "blue"

@@ -46,6 +46,60 @@
     object-fit: contain;
 }
 
+/* section 2 */
+
+.sec2MainContainer
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 700px
+}
+
+.sec2TextContainer
+{
+    flex-direction: column;
+    background-color: #337ab7;
+    width: 25%;
+    font-family: "Roboto";
+    align-items: center;
+    padding: 15px;
+}
+
+.sec2Heading
+{
+    
+    font-size: 34px;
+    color: White;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.sec2Text
+{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.sec2ServicesCardContainer{
+    width: 75%;
+    padding-left: 20px;
+    padding-right: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec2ButtonContainer
+{
+    margin-top: 40px;
+    width: 250px;
+}
+
 @media screen and (min-width: 1280px) and (max-width: 1450px)
 {
     /* Section 1 */
@@ -57,6 +111,24 @@
     .sec1Text
     {
         font-size: 21px;
+    }
+
+    /* section 2 */
+
+    .sec2Heading
+    {
+        font-size: 30px;
+       
+    }
+
+    .sec2Text
+    {
+        font-size: 26px;
+    }
+
+    .sec2ButtonContainer{
+
+        margin-top: 30px;
     }
         
 }
@@ -79,6 +151,21 @@
     {
         width: 600px;
     }
+
+       /* section 2 */
+
+       .sec2Heading
+       {
+           font-size: 26px;
+          
+       }
+   
+       .sec2Text
+       {
+           font-size: 24px;
+       }
+   
+       
 }
 
 @media screen and (min-width: 1020px) and (max-width: 1100px)
@@ -108,7 +195,21 @@
         width: 500px;
         height: 400px;
     }
-    
+
+    /* section 2 */
+
+    .sec2Heading
+    {
+        font-size: 26px;
+        
+    }
+
+    .sec2Text
+    {
+        font-size: 24px;
+    }
+
+       
 }
 
 @media screen and (min-width: 810px) and (max-width: 1019px)
@@ -140,6 +241,24 @@
     }
 
     .sec1ButtonContainer
+    {
+        width: 150px;
+    }
+
+    /* section 2 */
+
+    .sec2Heading
+    {
+        font-size: 24px;
+        
+    }
+
+    .sec2Text
+    {
+        font-size: 20px;
+    }
+
+    .sec2ButtonContainer
     {
         width: 150px;
     }
@@ -175,6 +294,24 @@
     }
 
     .sec1ButtonContainer
+    {
+        width: 150px;
+    }
+
+    /* section 2 */
+
+    .sec2Heading
+    {
+        font-size: 22px;
+        
+    }
+
+    .sec2Text
+    {
+        font-size: 19px;
+    }
+
+    .sec2ButtonContainer
     {
         width: 150px;
     }
@@ -219,6 +356,41 @@
 
     .sec1ButtonContainer
     {
+        width: 150px;
+    }
+
+    /* section 2 */
+        
+    .sec2MainContainer
+    {
+        justify-content: center;
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .sec2TextContainer
+    {
+        width: 92%;
+    }
+
+    .sec2Heading
+    {
+        font-size: 28px;
+    }
+
+    .sec2Text
+    {
+        font-size: 20px;
+
+    }
+
+    .sec2ServicesCardContainer{
+        width: 100%;
+    }
+
+    .sec2ButtonContainer
+    {
+        margin-top: 20px;
         width: 150px;
     }
     
