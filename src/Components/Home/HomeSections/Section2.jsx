@@ -141,6 +141,8 @@ const Section2 = () => {
   };
 
   useEffect(() => {
+    if (window.innerWidth > 1500) setCardArray(servicesArray);
+    else setCardArray(servicesArray2);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
