@@ -14,8 +14,19 @@ import service5 from "./Services5.svg";
 import service6 from "./Services6.svg";
 import service7 from "./Services7.svg";
 import service8 from "./Services8.svg";
+import locationSymbol from "./Location.svg";
+import phoneSymbol from "./phoneSymbol.svg";
+import emailSymbol from "./emaiSymbol.svg";
+import facebookBlack from "./facebookBlack.svg";
+import instaBlack from "./instagramBlack.svg";
+import linkedInBlack from "./linkedInBlack.svg";
+import whatsappBlack from "./whatsappBlack.svg";
 
 export const Images = {
+  facebookBlack,
+  whatsappBlack,
+  linkedInBlack,
+  instaBlack,
   whatsapp,
   email,
   facebook,
@@ -32,4 +43,7 @@ export const Images = {
   service6,
   service7,
   service8,
+  locationSymbol,
+  phoneSymbol,
+  emailSymbol,
 };
