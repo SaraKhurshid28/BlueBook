@@ -1,13 +1,13 @@
 import { Button, Spin } from "antd";
 import "./BlueButton.css";
 const BlueButton = (props) => {
+  console.log(props);
   return (
     <>
       <Button
         style={{
-          height: `${props.height}px`,
+          height: props.height === 0 ? "auto" : `${props.height}px`,
           fontSize: `${props.size}px`,
-
         }}
         className={`${
           props.buttonBackground === "blue"

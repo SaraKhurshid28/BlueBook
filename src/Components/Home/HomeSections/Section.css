@@ -60,6 +60,27 @@
     height: 100px;
 }
 
+@media screen and (min-width: 1501px) and (max-width: 1600px)
+{
+
+    .sec2CardImage{
+        width: 230px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 1451px) and (max-width: 1500px)
+{
+    .sec2CardStyle{
+        width:28%;
+
+    }
+    
+    .sec2SelectCardStyle{
+        width:28% ;
+         }
+
+}
 
 @media screen and (min-width: 1280px) and (max-width: 1450px)
 {
