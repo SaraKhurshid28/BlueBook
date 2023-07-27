@@ -3,6 +3,9 @@
     font-family: "Robot";
     font-weight: 700;
     color: White;
+    padding: 1%;
+    white-space: normal  !important;
+
 }
 
 .blueButton{
@@ -13,6 +16,8 @@
 
 .redButton{
     background-color: red !important;
+    border-color:red !important;
+
 }
 
 .blackButton{
@@ -21,7 +26,14 @@
 
 }
 
-.buttonContainer:hover{
-    color: White !important;
+.blueButton:hover{
+    color: black !important;
+}
 
+.redButton:hover{
+    color: black !important;
+}
+
+.blackButton:hover{
+    color: #337ab7 !important;
 }

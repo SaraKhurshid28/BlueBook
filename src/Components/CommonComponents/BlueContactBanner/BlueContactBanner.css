@@ -1,0 +1,261 @@
+.bannerMainContainer{
+    width: 99.8%;
+    height: max-content;
+    font-family: "Roboto";
+    margin-top: 2%;
+
+}
+
+/* one Line*/
+
+
+.bannerOneLineMainContainer{
+    display: flex;
+    padding: 2%;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(#022b4e, #748fa7);
+  
+}
+
+.bannerOneLineButtonStyle{
+    width: 20%;
+}
+
+.bannerOneLineTextStyle{
+    font-size: 28px;
+    font-weight: 900;
+    opacity: 1;
+    width: 75%;
+    padding-left: 1%;
+}
+
+/* two Line Text and 1 button */
+
+.bannerTwoLineTextMainContainer{
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    flex-direction: column;
+    color: red;
+}
+
+.bannerTwoLineTextStyle{
+    font-size: 28px;
+    font-weight: 600;
+    opacity: 1;
+    padding: 1% 0%;
+    text-align: center;
+}
+
+.bannerTwoLineButtonStyle{
+    margin-top: 2.5%;
+    width: 10%;
+}
+
+/* two line two Button */
+
+.bannerTLTBTextStyle
+{
+    font-size: 28px;
+    font-weight: 900;
+    opacity: 1;
+    text-align: center;
+    color: red;
+
+}
+
+.bannerTLTBText2Style
+{
+    font-size: 26px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+}
+
+.bannerTLTButtonContainer{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.bannerTLTButtonStyle{
+    width: 15%;
+}
+
+
+
+@media screen and (min-width: 1280px) and (max-width: 1450px)
+{
+    .bannerOneLineTextStyle{
+        font-size: 24px;
+    }
+
+    .bannerTwoLineTextStyle{
+        font-size: 24px;
+    }
+
+    .bannerTwoLineButtonStyle{
+        width: 12%;
+    }
+
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1279px)
+{
+   
+    .bannerOneLineTextStyle{
+        font-size: 22px;
+    }
+
+    .bannerTwoLineTextStyle{
+        font-size: 22px;
+    }
+
+    .bannerTwoLineButtonStyle{
+        width: 12%;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1100px)
+
+{
+
+    .bannerOneLineTextStyle{
+        font-size: 20px;
+    }  
+
+    .bannerTwoLineTextStyle{
+        font-size: 20px;
+    }
+
+    .bannerTwoLineButtonStyle{
+        width: 15%;
+    }
+
+
+    .bannerTLTButtonStyle{
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 810px) and (max-width: 1019px)
+
+{
+   
+    .bannerOneLineTextStyle{
+        font-size: 16px;
+    }  
+
+    .bannerTwoLineTextStyle{
+        font-size: 16px;
+    }  
+
+    .bannerTwoLineTextMainContainer{
+        padding: 2%;
+    }
+
+    .bannerTwoLineButtonStyle{
+        width: 20%;
+    }
+
+    .bannerTLTBTextStyle
+    {
+        font-size: 24px;
+
+    }
+
+    .bannerTLTBText2Style
+    {
+        font-size: 22px;
+    }
+
+    .bannerTLTButtonStyle{
+        width: 20%;
+    }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 809px)
+
+{
+    .bannerOneLineTextStyle{
+        font-size: 16px;
+        width: 65%;
+
+    } 
+
+    .bannerOneLineButtonStyle{
+        width: 35%;
+    }
+
+    .bannerTwoLineTextMainContainer{
+        padding: 3%;
+    }
+
+    .bannerTwoLineTextStyle{
+        font-size: 16px;
+    }  
+
+    .bannerTwoLineButtonStyle{
+        width: 25%;
+    }
+
+
+    .bannerTLTBTextStyle
+    {
+        font-size: 22px;
+
+    }
+
+    .bannerTLTBText2Style
+    {
+        font-size: 18px;
+    }
+
+    .bannerTLTButtonStyle{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 599px) 
+{
+    .bannerOneLineTextStyle{
+        font-size: 10px;
+        width: 45%;
+    } 
+
+
+.bannerOneLineButtonStyle{
+    width: 45%;
+}
+
+.bannerTwoLineTextStyle{
+    font-size: 10px;
+}  
+
+.bannerTwoLineTextMainContainer{
+    padding: 3%;
+}
+
+.bannerTwoLineButtonStyle{
+    width: 30%;
+}
+
+.bannerTLTBTextStyle
+{
+    font-size: 20px;
+
+}
+
+.bannerTLTBText2Style
+{
+    font-size: 16px;
+}
+
+.bannerTLTButtonStyle{
+    width: 30%;
+}
+    
+}
