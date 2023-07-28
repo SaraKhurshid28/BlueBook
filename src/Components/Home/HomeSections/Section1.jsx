@@ -2,15 +2,10 @@ import { useState } from "react";
 import { Images } from "../../../Assests/Constant";
 import { BlueButton } from "../../CommonComponents";
 import ".././Home.css";
+import { useNavigate } from "react-router-dom";
 
 const Section1 = () => {
-  const [isLoadingButton, setIsLoadingButton] = useState(false);
-
-  const onClickButton = () => {
-    setIsLoadingButton(true);
-    console.log("Calling From in Section 1");
-    setIsLoadingButton(false);
-  };
+  const navigator = useNavigate();
 
   return (
     <>
@@ -36,13 +31,13 @@ const Section1 = () => {
           <div className="appJustifyAlignCenterItem">
             <div className="sec1ButtonContainer">
               <BlueButton
-                isLoading={isLoadingButton}
                 text={"About Us"}
                 height={window.innerWidth > 1020 ? 60 : 40}
                 buttonBackground={"blue"}
-                onClick={onClickButton}
+                onClick={() => {
+                  navigator("/aboutus");
+                }}
                 size={20}
-
               />
             </div>
           </div>
