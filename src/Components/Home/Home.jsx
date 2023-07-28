@@ -10,12 +10,13 @@ const Home = () => {
         <Section3 />
         <Section4 />
         <BlueContactBanner
-          twoLineTwoButtonText={"Offer:"}
-          twoLineTwoButtonText2={
-            "Contact Us & get 30% Off On Your First Estimate!"
+          bannerType={"oneLine"}
+          oneLineText={
+            "WE ARE A GLOBAL NETWORK OF CONSTRUCTION COST EXPERTS. Let's Work Together"
           }
-          buttonText={"Contact us"}
-          buttonText2={"Work Sample"}
+          buttonText={"Work Sample"}
+          oneLineTextColor={"#FFFF00"}
+          oneLineTextIsUpper={true}
         />
       </div>
 

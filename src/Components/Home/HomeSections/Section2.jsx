@@ -4,8 +4,10 @@ import "./Section.css";
 import { BlueButton } from "../../CommonComponents";
 import { Card } from "antd";
 import { Images } from "../../../Assests/Constant";
+import { useNavigate } from "react-router-dom";
 
 const Section2 = () => {
+  const navigate = useNavigate();
   const servicesArray = [
     {
       icon: `${Images.service1}`,
@@ -125,15 +127,8 @@ const Section2 = () => {
     },
   ];
 
-  const [isLoadingButton, setIsLoadingButton] = useState(false);
   const [serviceKey, setServiceKey] = useState("");
   const [cardArray, setCardArray] = useState(servicesArray2);
-
-  const onClickButton = () => {
-    setIsLoadingButton(true);
-    console.log("Calling From in Section 2");
-    setIsLoadingButton(false);
-  };
 
   const handleResize = () => {
     if (window.innerWidth > 1500) setCardArray(servicesArray);
@@ -164,11 +159,12 @@ const Section2 = () => {
 
           <div className="sec2ButtonContainer">
             <BlueButton
-              isLoading={isLoadingButton}
               text={"Explore More"}
               height={window.innerWidth > 1020 ? 60 : 50}
               buttonBackground={"black"}
-              onClick={onClickButton}
+              onClick={() => {
+                navigate("/services");
+              }}
               size={20}
             />
           </div>
@@ -205,6 +201,9 @@ const Section2 = () => {
                           height={25}
                           buttonBackground={"blue"}
                           size={10}
+                          onClick={() => {
+                            navigate("/services");
+                          }}
                         />
                       </div>
                     </div>

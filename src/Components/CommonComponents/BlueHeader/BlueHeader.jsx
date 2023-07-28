@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./BlueHeader.css";
 import { Images } from "../../../Assests/Constant";
 import { Drawer, Button } from "antd";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
+import BlueUploadModal from "../BlueUploadModal/BlueUploadModal";
 
 const BlueHeader = () => {
+  const navigate = useNavigate();
   const [menuKey, setMenuKey] = useState("home");
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const items = [
     {
@@ -39,7 +43,10 @@ const BlueHeader = () => {
     },
   ];
 
-  useEffect(() => {});
+  useEffect(() => {
+    if (!window.location.pathname.includes(menuKey))
+      setMenuKey(window.location.pathname.replace("/", ""));
+  }, [window.location.href]);
 
   return (
     <>
@@ -102,6 +109,7 @@ const BlueHeader = () => {
                   key={item.key}
                   onClick={() => {
                     setMenuKey(item.key);
+                    navigate(`/${item.key}`);
                   }}
                 >
                   {item.label}
@@ -110,7 +118,12 @@ const BlueHeader = () => {
             })}
           </div>
 
-          <div className="blueMenuButton">
+          <div
+            className="blueMenuButton"
+            onClick={() => {
+              setIsModalOpen(!isModalOpen);
+            }}
+          >
             <p>Upload Your Plan Here</p>
           </div>
         </div>
@@ -167,6 +180,11 @@ const BlueHeader = () => {
           <p>Upload Your Plan Here</p>
         </div>
       </Drawer>
+
+      <BlueUploadModal
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+      />
     </>
   );
 };

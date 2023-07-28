@@ -1,7 +1,6 @@
 import { Button, Spin } from "antd";
 import "./BlueButton.css";
 const BlueButton = (props) => {
-  console.log(props);
   return (
     <>
       <Button

@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 import ".././Home.css";
-import { BlueButton } from "../../CommonComponents";
+import { BlueButton, BlueUploadModal } from "../../CommonComponents";
 const Section3 = () => {
-  const [isLoadingButton, setIsLoadingButton] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const onClickButton = () => {
-    setIsLoadingButton(true);
-    console.log("Calling From in Section 3");
-    setIsLoadingButton(false);
-  };
   return (
     <>
       <div className="sec3MainConatiner">
@@ -20,15 +15,21 @@ const Section3 = () => {
 
         <div className="sec3ButtonContainer">
           <BlueButton
-            isLoading={isLoadingButton}
             text={"Upload Your Plan"}
             height={window.innerWidth > 700 ? 60 : 40}
             buttonBackground={"blue"}
-            onClick={onClickButton}
+            onClick={() => {
+              setIsModalOpen(!isModalOpen);
+            }}
             size={20}
           />
         </div>
       </div>
+
+      <BlueUploadModal
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+      />
     </>
   );
 };

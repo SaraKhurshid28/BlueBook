@@ -1,11 +1,27 @@
+import React, { useState } from "react";
 import BlueButton from "../BlueButton/BlueButton";
 import "./BlueContactBanner.css";
+import BlueUploadModal from "../BlueUploadModal/BlueUploadModal";
+import { useNavigate } from "react-router-dom";
+
 const BlueContactBanner = (props) => {
-  console.log(props);
+  const navigate = useNavigate();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const onClickButton = (type) => {
+    let buttonString = "";
+    if (type === 1) buttonString = props.buttonText.toLowerCase();
+    else buttonString = props.buttonText2.toLowerCase();
+    if (buttonString.includes("upload")) {
+      setIsModalOpen(!isModalOpen);
+    } else if (buttonString.includes("contact")) navigate("/contactus");
+    else if (buttonString.includes("work sample")) navigate("/worksample");
+  };
+
   return (
     <>
       <div className="bannerMainContainer">
-        {props.bannerType == "oneLine" ? (
+        {props.bannerType === "oneLine" ? (
           <div className="bannerOneLineMainContainer">
             <p
               className="bannerOneLineTextStyle"
@@ -22,10 +38,11 @@ const BlueContactBanner = (props) => {
                 height={60}
                 buttonBackground={"red"}
                 size={window.innerWidth > 1020 ? 16 : 14}
+                onClick={() => onClickButton(1)}
               />
             </div>
           </div>
-        ) : props.bannerType == "twoLinesWithOneButton" ? (
+        ) : props.bannerType === "twoLinesWithOneButton" ? (
           <div className="bannerTwoLineTextMainContainer">
             <p className="bannerTwoLineTextStyle">{props.twoLineText}</p>
             <p className="bannerTwoLineTextStyle">{props.twoLineText2}</p>
@@ -35,6 +52,7 @@ const BlueContactBanner = (props) => {
                 height={window.innerWidth > 1020 ? 80 : 40}
                 buttonBackground={"red"}
                 size={window.innerWidth > 1020 ? 16 : 14}
+                onClick={() => onClickButton(1)}
               />
             </div>
           </div>
@@ -54,6 +72,7 @@ const BlueContactBanner = (props) => {
                   height={window.innerWidth > 1020 ? 80 : 40}
                   buttonBackground={"red"}
                   size={window.innerWidth > 1020 ? 18 : 14}
+                  onClick={() => onClickButton(1)}
                 />
               </div>
               <div className="bannerTLTButtonStyle">
@@ -62,12 +81,18 @@ const BlueContactBanner = (props) => {
                   height={window.innerWidth > 1020 ? 80 : 40}
                   buttonBackground={"red"}
                   size={window.innerWidth > 1020 ? 18 : 14}
+                  onClick={() => onClickButton(2)}
                 />
               </div>
             </div>
           </div>
         )}
       </div>
+
+      <BlueUploadModal
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+      />
     </>
   );
 };
@@ -76,8 +101,7 @@ export default BlueContactBanner;
 
 // sample for two Line and 1 button
 
-{
-  /* <BlueContactBanner
+/* <BlueContactBanner
 bannerType={"twoLinesWithOneButton"}
 twoLineText={
   "If You Have Any Further Queries, You Can Call Us At +1347 480-1903 Or Email At Info@blueBookestimator.Com"
@@ -87,12 +111,10 @@ twoLineText2={
 }
 buttonText={"Upload Your Plan"}
 /> */
-}
 
 // sample for one Line
 
-{
-  /* <BlueContactBanner
+/* <BlueContactBanner
 bannerType={"oneLine"}
 oneLineText={
   "WORKING WITH US WE ARE A GLOBAL NETWORK OF CONSTRUCTION COST EXPERTS"
@@ -101,15 +123,14 @@ buttonText={"Upload your plan and get quote with 30% off"}
 oneLineTextColor={"#FFFF00"}
 oneLineTextIsUpper={true}
 /> */
-}
 
 // Two lines with 2 button sample
 
-// <BlueContactBanner
-// twoLineTwoButtonText={"Offer:"}
-// twoLineTwoButtonText2={
-//   "Contact Us & get 30% Off On Your First Estimate!"
-// }
-// buttonText={"Contact us"}
-// buttonText2={"Work Sample"}
-// />
+/* <BlueContactBanner
+twoLineTwoButtonText={"Offer:"}
+twoLineTwoButtonText2={
+  "Contact Us & get 30% Off On Your First Estimate!"
+}
+buttonText={"Contact us"}
+buttonText2={"Work Sample"}
+/> */
