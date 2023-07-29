@@ -7,10 +7,10 @@ const Section3 = () => {
   return (
     <>
       <div className="sec3MainConatiner">
-        <h1 className="sec3Heading">Your Plan</h1>
+        <h1 className="sec3Heading">Your Plans</h1>
         <hr className="sec3HeadingLine" />
         <p className="sec3Text">
-          We can help you to convert your Plan into Reality
+          We can help you to convert your Plans into Reality
         </p>
 
         <div className="sec3ButtonContainer">

@@ -21,6 +21,8 @@ import facebookBlack from "./facebookBlack.svg";
 import instaBlack from "./instagramBlack.svg";
 import linkedInBlack from "./linkedInBlack.svg";
 import whatsappBlack from "./whatsappBlack.svg";
+import dropbox from "./dropbox.svg";
+import googleDrive from "./googleDrive.svg";
 
 export const Images = {
   facebookBlack,
@@ -46,4 +48,6 @@ export const Images = {
   locationSymbol,
   phoneSymbol,
   emailSymbol,
+  dropbox,
+  googleDrive,
 };
