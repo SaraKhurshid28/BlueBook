@@ -1,0 +1,272 @@
+.serviceMainContainer{
+    padding: 2%;
+}
+
+.serviceHeading{
+    text-transform: uppercase;
+    color: #337ab7;
+    font-size: 36px;
+}
+
+.serviceCardContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1% 10%;
+}
+
+.secviceCardStyle
+{
+    width: 400px;
+    height: 400px;
+    border: 1px solid #337ab7;
+    margin: 1% 0%;
+}
+
+.cardImage {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0; 
+    height: 255px;
+  }
+
+
+.cardTick{
+    width: 100%;
+    height: 60%;
+    margin-top: -60px;
+    margin-bottom: 5px;
+}
+
+.cardTextContainer{
+    background-color: #337ab7;
+    height: 145px;
+    margin-top: -6px;
+    border-radius: 0 0 8px 8px; 
+    color: #9EE3F9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 600;
+}
+
+.cardSubText{
+    padding: 15px 0;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cardSubText:hover{
+    color: black;
+}
+
+
+@media screen and (min-width: 1501px) and (max-width: 1600px)
+{
+    .serviceCardContainer{
+        padding: 1% 5%;
+    }
+}
+
+@media screen and (min-width: 1451px) and (max-width: 1500px)
+{
+    .serviceCardContainer{
+        padding: 1% 4%;
+    }
+}
+
+@media screen and (min-width: 1351px) and (max-width: 1450px)
+{
+    .serviceCardContainer{
+        padding: 1%;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1350px)
+{
+    .serviceCardContainer{
+        padding: 1%;
+    }
+    .secviceCardStyle
+    {
+        width: 380px;
+    }   
+
+   
+
+}
+
+@media screen and (min-width: 1180px) and (max-width: 1279px)
+{
+    .serviceCardContainer{
+        padding: 1%;
+    }
+
+    .secviceCardStyle
+    {
+        width: 360px;
+    }   
+
+  
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1179px)
+{
+    .serviceCardContainer{
+        padding: 1%;
+    }
+
+    .secviceCardStyle
+    {
+        width: 335px;
+    }  
+    
+    .cardTextContainer{
+        font-size: 18px;
+        margin-top: -7px;
+
+    }
+    
+    .cardSubText{
+        font-size: 12px;
+    }
+    
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1100px)
+{
+    .serviceCardContainer{
+        padding: 1%;
+        }
+
+    .secviceCardStyle
+    {
+        width: 300px;
+    }  
+    
+    .cardTextContainer{
+        font-size: 16px;
+        margin-top: -7px;
+
+    }
+    
+    .cardSubText{
+        font-size: 10px;
+
+    }
+
+    .secviceCardStyle
+    {
+        margin: 1%;
+    }  
+    
+}
+
+@media screen and (min-width: 810px) and (max-width: 1019px)
+{
+    .serviceCardContainer{
+        padding: 1%;
+        justify-content: center;
+    }
+
+    .secviceCardStyle
+    {
+        width: 350px;
+    }  
+    
+    .cardTextContainer{
+        font-size: 18px;
+        margin-top: -7px;
+
+    }
+    
+    .cardSubText{
+        font-size: 12px;
+    }
+
+    .secviceCardStyle
+    {
+        margin: 1%;
+    } 
+ }
+
+@media screen and (min-width: 600px) and (max-width: 809px)
+{
+    .serviceCardContainer{
+        padding: 1%;
+        justify-content: center;
+    }
+
+    .secviceCardStyle
+    {
+        width: 320px;
+    }  
+
+    .cardTick{
+        width: 80%;
+        height: 40%;
+    }
+    
+    .cardTextContainer{
+        font-size: 18px;
+        margin-top: -7px;
+    }
+    
+    .cardSubText{
+        font-size: 12px;
+    }
+
+    .secviceCardStyle
+    {
+        margin: 1%;
+    } 
+}
+
+@media screen and (max-width: 599px) 
+{
+    .serviceCardContainer{
+        padding: 1%;
+        justify-content: center;
+    }
+
+    .secviceCardStyle
+    {
+        width: 350px;
+        height: 350px;
+    }  
+
+
+    .cardImage {
+        height: 250px;
+    }
+
+    .cardTick{
+        width: 80%;
+        height: 40%;
+        margin-top: -25px;
+    }
+    
+    .cardTextContainer{
+        height: 100px;
+        margin-top: -8px;
+    }
+  
+    
+    .cardTextContainer{
+        font-size: 16px;
+    }
+    
+    .cardSubText{
+        font-size: 10px;
+    }
+
+    .secviceCardStyle
+    {
+        margin: 2%;
+    } 
+
+}
