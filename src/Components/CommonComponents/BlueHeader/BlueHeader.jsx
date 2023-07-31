@@ -168,6 +168,7 @@ const BlueHeader = () => {
                 key={item.key}
                 onClick={() => {
                   setMenuKey(item.key);
+                  navigate(`/${item.key}`);
                 }}
               >
                 {item.label}
@@ -176,7 +177,12 @@ const BlueHeader = () => {
           })}
         </div>
 
-        <div className="blueMenuButton">
+        <div
+          className="blueMenuButton"
+          onClick={() => {
+            setIsModalOpen(!isModalOpen);
+          }}
+        >
           <p>Upload Your Plan Here</p>
         </div>
       </Drawer>

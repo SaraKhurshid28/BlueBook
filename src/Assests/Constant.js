@@ -23,6 +23,29 @@ import linkedInBlack from "./linkedInBlack.svg";
 import whatsappBlack from "./whatsappBlack.svg";
 import dropbox from "./dropbox.svg";
 import googleDrive from "./googleDrive.svg";
+import servicesImg from "../Assests/ServicesImages/ServiceImage.svg";
+import servicesImg1 from "../Assests/ServicesImages/ServiceImage1.svg";
+import servicesImg2 from "../Assests/ServicesImages/ServiceImage2.svg";
+import servicesImg3 from "../Assests/ServicesImages/ServiceImage3.svg";
+import servicesImg4 from "../Assests/ServicesImages/ServiceImage4.svg";
+import servicesImg5 from "../Assests/ServicesImages/ServiceImage5.svg";
+import servicesImg6 from "../Assests/ServicesImages/ServiceImage6.svg";
+import servicesImg7 from "../Assests/ServicesImages/ServiceImage7.svg";
+import servicesImg8 from "../Assests/ServicesImages/ServiceImage8.svg";
+import servicesImg9 from "../Assests/ServicesImages/ServiceImage9.svg";
+import servicesImg10 from "../Assests/ServicesImages/ServiceImage10.svg";
+import servicesImg11 from "../Assests/ServicesImages/ServiceImage11.svg";
+import servicesImg12 from "../Assests/ServicesImages/ServiceImage12.svg";
+import servicesImg13 from "../Assests/ServicesImages/ServiceImage13.svg";
+import servicesImg14 from "../Assests/ServicesImages/ServiceImage14.svg";
+import servicesImg15 from "../Assests/ServicesImages/ServiceImage15.svg";
+import servicesImg16 from "../Assests/ServicesImages/ServiceImage16.svg";
+import servicesImg17 from "../Assests/ServicesImages/ServiceImage18.svg";
+import servicesImg18 from "../Assests/ServicesImages/ServiceImage17.svg";
+import servicesImg19 from "../Assests/ServicesImages/ServiceImage19.svg";
+import servicesImg20 from "../Assests/ServicesImages/ServiceImage20.svg";
+
+import tick from "./tickWithRound.svg";
 
 export const Images = {
   facebookBlack,
@@ -50,4 +73,26 @@ export const Images = {
   emailSymbol,
   dropbox,
   googleDrive,
+  servicesImg,
+  servicesImg1,
+  servicesImg2,
+  servicesImg3,
+  servicesImg4,
+  servicesImg5,
+  servicesImg6,
+  servicesImg7,
+  servicesImg8,
+  servicesImg9,
+  servicesImg10,
+  servicesImg11,
+  servicesImg12,
+  servicesImg13,
+  servicesImg14,
+  servicesImg15,
+  servicesImg16,
+  servicesImg17,
+  servicesImg18,
+  servicesImg19,
+  servicesImg20,
+  tick,
 };

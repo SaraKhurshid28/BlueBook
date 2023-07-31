@@ -1,6 +1,7 @@
 .modalMainContainer{
     width: 700px !important;
 }
+
 .modalTitle{
     background-color: #337ab7;
     padding: 2%;
@@ -80,4 +81,33 @@
 
 .modalSubmitButton:hover{
     color: black !important;
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 809px)
+
+{  
+    .modalTitle{
+        font-size: 26px;
+     
+    }
+    
+    .modalSubHeading{
+        font-size: 16px; 
+    }
+    
+    
+}
+
+@media screen and (max-width: 599px) 
+{
+    .modalTitle{
+        font-size: 22px;
+     
+    }
+    
+    .modalSubHeading{
+        font-size: 14px; 
+    }
+    
 }
