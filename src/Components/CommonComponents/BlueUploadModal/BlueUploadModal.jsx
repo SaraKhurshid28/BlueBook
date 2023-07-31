@@ -2,7 +2,7 @@ import "./BlueUploadModal.css";
 import { Modal } from "antd";
 import { Form, Input, Upload, Spin, Button } from "antd";
 import { UploadOutlined, LoadingOutlined } from "@ant-design/icons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Images } from "../../../Assests/Constant";
 import BlueButton from "../BlueButton/BlueButton";
 
@@ -17,22 +17,32 @@ const BlueUploadModal = (props) => {
     />
   );
 
-  const [details, setDetails] = useState({
-    name: "",
-    email: "",
-    link: "",
-    contact: "",
-    file: [],
-  });
+  const [details, setDetails] = useState({});
   const [isLoading, setIsLoading] = useState(false);
+  const [isLoadingSubmit, setIsLoadingSubmit] = useState(false);
+
   const [isLink, setIsLink] = useState(false);
 
-  const onChangeUpload = (name, event) => {
-    console.log(name, event);
+  const onChangeUpload = (event, name) => {
+    setIsLoading(true);
+    setDetails({ ...details, [name]: event.fileList });
+    setIsLoading(false);
   };
 
   const onRemoveUpload = async (name, event) => {
-    console.log(name, event);
+    console.log("remove file from list working in Blue Upload Modal File");
+  };
+
+  const onChangeValue = (event) => {
+    const { value, name } = event.target;
+    setDetails({ ...details, [name]: value });
+  };
+
+  const onFormSubmit = () => {
+    setIsLoadingSubmit(true);
+    console.log("Submit button working in Blue Upload Modal File");
+
+    setIsLoadingSubmit(false);
   };
 
   return (
@@ -60,13 +70,14 @@ const BlueUploadModal = (props) => {
               remember: true,
             }}
             autoComplete="off"
+            onFinish={onFormSubmit}
           >
             <Form.Item label="Your Name" name="name" className="modalInput">
               <Input
                 placeholder="Please enter your name"
                 name="name"
                 value={details.name}
-                onChange={() => {}}
+                onChange={onChangeValue}
               />
             </Form.Item>
 
@@ -75,7 +86,7 @@ const BlueUploadModal = (props) => {
                 placeholder="Please enter your email address"
                 name="email"
                 value={details.email}
-                onChange={() => {}}
+                onChange={onChangeValue}
               />
             </Form.Item>
 
@@ -83,12 +94,18 @@ const BlueUploadModal = (props) => {
               label="Your Contact Number (Required)"
               name="contact"
               className="modalInput"
+              rules={[
+                {
+                  required: true,
+                  message: "please enter contact details before submit",
+                },
+              ]}
             >
               <Input
                 placeholder="Please enter your contact number"
                 name="contact"
                 value={details.contact}
-                onChange={() => {}}
+                onChange={onChangeValue}
               />
             </Form.Item>
 
@@ -99,7 +116,7 @@ const BlueUploadModal = (props) => {
                     placeholder="Please enter your link"
                     name="link"
                     value={details.link}
-                    onChange={() => {}}
+                    onChange={onChangeValue}
                   />
                 </Form.Item>
               ) : (
@@ -154,18 +171,17 @@ const BlueUploadModal = (props) => {
                 )}
               </div>
             </div>
-          </Form>
 
-          <div className="appJustifyCenterItem">
-            <div style={{ width: "50%", margin: "20px 0px" }}>
-              <BlueButton
-                text={"Submit"}
-                height={window.innerWidth > 700 ? 60 : 40}
-                buttonBackground={"noColor"}
-                size={20}
-              />
+            <div className="appJustifyCenterItem">
+              <div style={{ width: "40%" }}>
+                <Form.Item>
+                  <Button className="modalSubmitButton" htmlType="submit">
+                    Submit
+                  </Button>
+                </Form.Item>
+              </div>
             </div>
-          </div>
+          </Form>
         </div>
       </Modal>
     </>

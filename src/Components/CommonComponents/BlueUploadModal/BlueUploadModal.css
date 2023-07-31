@@ -66,6 +66,18 @@
 }
 
 .modalSubmitButton{  
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    font-family: "Robot";
+    font-weight: 700;
+    color: White;
+    white-space: normal  !important;
+    background-color: none;
+    border-color: #337ab7 !important;
+    color: #337ab7;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.modalSubmitButton:hover{
+    color: black !important;
 }
