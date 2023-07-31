@@ -70,3 +70,7 @@ ant class changes
   margin-top: -7%;
   background-color: #337ab7;
 } */
+
+.ant-modal .ant-modal-content{
+  padding: 0px !important;
+}

@@ -23,7 +23,12 @@
 .blackButton{
     background-color: black;
     border-color: black !important;
+}
 
+.noColorButton{
+    background-color: none;
+    border-color: #337ab7 !important;
+    color: #337ab7;
 }
 
 .blueButton:hover{
@@ -36,4 +41,8 @@
 
 .blackButton:hover{
     color: #337ab7 !important;
+}
+
+.noColorButton:hover{
+    color: black !important;
 }

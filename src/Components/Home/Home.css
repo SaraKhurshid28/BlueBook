@@ -103,7 +103,7 @@
 /* section 3 */
 
 .sec3MainConatiner{
-    height: 500px;
+    height: 250px;
     border-radius: 10px;
     background-image: url("../../Assests/homeSection3.svg");
     background-repeat:no-repeat;
@@ -116,7 +116,7 @@
 }
 
 .sec3Heading{
-    font-size: 92px;
+    font-size: 73px;
     font-family: "Roboto";
     font-weight: 700;
 }
@@ -124,12 +124,12 @@
 .sec3HeadingLine{
     border: 3px solid black;
     border-radius: 5px;
-    width: 33%;
+    width: 18%;
     margin-top: -5px;
 }
 
 .sec3Text{
-    font-size: 32px;
+    font-size: 18px;
     font-family: "Roboto";
     font-weight: 500;
 }
@@ -248,11 +248,11 @@
 
     /* section 3 */
     .sec3HeadingLine{
-        width: 42%;
+        width: 23%;
     }
     
     .sec3Text{
-        font-size: 30px;
+        font-size: 18px;
     }
 
     /* section 4 */
@@ -299,12 +299,15 @@
 
     /* section 3 */
     
+    .sec3Heading{
+        font-size: 60px;
+    }
      .sec3HeadingLine{
-        width: 47%;
+        width: 22%;
     }
     
     .sec3Text{
-        font-size: 28px;
+        font-size: 16px;
     }
 
        /* section 4 */
@@ -362,15 +365,15 @@
 
     /* section 3 */
     .sec3Heading{
-        font-size: 80px;
+        font-size: 60px;
     }
     
     .sec3HeadingLine{
-        width: 48%;
+        width: 24%;
     }
     
     .sec3Text{
-        font-size: 28px;
+        font-size: 16px;
     }
 
     /* section 4 */
@@ -439,15 +442,15 @@
 
     /* section 3 */
     .sec3Heading{
-    font-size: 80px;
+    font-size: 50px;
     }
     
     .sec3HeadingLine{
-        width: 62%;
+        width: 28%;
     }
     
     .sec3Text{
-        font-size: 28px;
+        font-size: 14px;
     }
 
     /* section 4 */
@@ -515,21 +518,17 @@
     
     /* section 3 */
 
-    .sec3MainConatiner{
-        height: 300px;
-    }
-
     .sec3Heading{
-        font-size: 60px;
+        font-size: 45px;
     }
     
     .sec3HeadingLine{
-        width: 62%;
+        width: 29%;
         
     }
     
     .sec3Text{
-        font-size: 20px;
+        font-size: 12px;
     }
 
         /* section 4 */
@@ -623,23 +622,19 @@
 
     /* section 3 */
 
-    .sec3MainConatiner{
-        height: 300px;
-    }
+ 
 
     .sec3Heading{
-        font-size: 50px;
+        font-size: 30px;
     }
     
     .sec3HeadingLine{
     border: 2px solid black;
-
-        width: 72%;
-        
+    width: 40%;
     }
     
     .sec3Text{
-        font-size: 16px;
+        font-size: 10px;
     }
 
         /* section 4 */

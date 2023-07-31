@@ -13,6 +13,8 @@ const BlueButton = (props) => {
             ? "blueButton"
             : props.buttonBackground === "red"
             ? "redButton"
+            : props.buttonBackground === "noColor"
+            ? "noColorButton"
             : "blackButton"
         } buttonContainer`}
         onClick={props.onClick}
