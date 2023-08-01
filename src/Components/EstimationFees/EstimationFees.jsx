@@ -1,5 +1,5 @@
 import { Images } from "../../Assests/Constant";
-import { BlueFooter } from "../CommonComponents";
+import { BlueContactBanner, BlueFooter } from "../CommonComponents";
 import "./EstimationFees.css";
 const EstimationFees = () => {
   return (
@@ -32,9 +32,27 @@ const EstimationFees = () => {
             <img src={Images.fee} className="feeDetailImage" />
           </div>
           <div className="feeDetailEachContainer">
-            <h2 className="feeSubHeading">Our Process</h2>
+            <h2 className="feeSubHeading">Format & Software</h2>
+            <p className="feeText">
+              Our work would be in editable excel sheet, if required, we can use
+              your template or can put your company details on the
+              estimate/proposal. For to do quantities takeoff, we use software
+              Planswift, BlueBeam, On Screen Takeoff (OST).{" "}
+            </p>
+            <p className="feeSubText">
+              Mostly we use Plan swift. We will be very happy to provide
+              Software files as well as Markups/color drawings (if required).
+            </p>
           </div>
         </div>
+        <BlueContactBanner
+          twoLineTwoButtonText={"Offer:"}
+          twoLineTwoButtonText2={
+            "Before any decision please once look our Work Sample and than let’s review your plans and provide you estimated fees according to your budget. And convert your plan into reality. Please Contact us +1 917 300 1079 or email thebluebookestimator@gmail.com or you can upload your drawing too."
+          }
+          buttonText={"Upload Your"}
+          buttonText2={"Work Sample"}
+        />
       </div>
       <BlueFooter />
     </>
