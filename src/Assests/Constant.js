@@ -44,7 +44,7 @@ import servicesImg17 from "../Assests/ServicesImages/ServiceImage18.svg";
 import servicesImg18 from "../Assests/ServicesImages/ServiceImage17.svg";
 import servicesImg19 from "../Assests/ServicesImages/ServiceImage19.svg";
 import servicesImg20 from "../Assests/ServicesImages/ServiceImage20.svg";
-
+import fee from "./fee.svg";
 import tick from "./tickWithRound.svg";
 
 export const Images = {
@@ -95,4 +95,5 @@ export const Images = {
   servicesImg19,
   servicesImg20,
   tick,
+  fee,
 };

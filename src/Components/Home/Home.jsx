@@ -14,7 +14,7 @@ const Home = () => {
           oneLineText={
             "WE ARE A GLOBAL NETWORK OF CONSTRUCTION COST EXPERTS. Let's Work Together"
           }
-          buttonText={"Work Sample"}
+          buttonText={"upload"}
           oneLineTextColor={"#FFFF00"}
           oneLineTextIsUpper={true}
         />

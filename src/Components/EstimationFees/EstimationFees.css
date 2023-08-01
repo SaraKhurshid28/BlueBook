@@ -1,0 +1,46 @@
+.feeMainContainer{
+    padding: 3% 2% 2% 2%;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.feeHeading{
+    color: #337ab7;
+    font-size: 38px;
+    margin-bottom: 1%;
+}
+
+.feeDetailContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.feeDetailEachContainer
+{
+    width: 35%;
+    height: 400px;
+    border: 1px solid red;
+}
+
+.feeDetailImage{
+    width: 100%;
+    border-radius: 8px; 
+    height: 400px;
+}
+
+.feeSubHeading{
+    color: #337ab7;
+    font-size: 34px;
+    margin-bottom: 1%;
+}
+
+.feeText{
+    font-size: 22px;
+    margin-bottom: 2%;
+}
+
+.feeSubText{
+    font-size: 22px;
+    color: red;
+}
