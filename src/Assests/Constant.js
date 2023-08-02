@@ -23,6 +23,16 @@ import linkedInBlack from "./linkedInBlack.svg";
 import whatsappBlack from "./whatsappBlack.svg";
 import dropbox from "./dropbox.svg";
 import googleDrive from "./googleDrive.svg";
+import payment1 from "./payment1.svg";
+import payment2 from "./payment2.svg";
+import payment3 from "./payment3.svg";
+import payment4 from "./payment4.svg";
+import payment5 from "./payment5.svg";
+import payment6 from "./payment6.svg";
+import payment7 from "./payment7.svg";
+import fee from "./fee.svg";
+import tick from "./tickWithRound.svg";
+import humanIcon from "./humanIcon.svg";
 import servicesImg from "../Assests/ServicesImages/ServiceImage.svg";
 import servicesImg1 from "../Assests/ServicesImages/ServiceImage1.svg";
 import servicesImg2 from "../Assests/ServicesImages/ServiceImage2.svg";
@@ -44,8 +54,6 @@ import servicesImg17 from "../Assests/ServicesImages/ServiceImage18.svg";
 import servicesImg18 from "../Assests/ServicesImages/ServiceImage17.svg";
 import servicesImg19 from "../Assests/ServicesImages/ServiceImage19.svg";
 import servicesImg20 from "../Assests/ServicesImages/ServiceImage20.svg";
-import fee from "./fee.svg";
-import tick from "./tickWithRound.svg";
 
 export const Images = {
   facebookBlack,
@@ -96,4 +104,12 @@ export const Images = {
   servicesImg20,
   tick,
   fee,
+  humanIcon,
+  payment1,
+  payment2,
+  payment3,
+  payment4,
+  payment5,
+  payment6,
+  payment7,
 };
