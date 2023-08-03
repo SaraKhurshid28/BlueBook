@@ -1,0 +1,35 @@
+.wsMainContainer{
+    padding: 3%;
+}
+
+.wsTabContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.wsTabItem{
+    width: 350px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 22px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+}
+
+.wsTabItemSelect
+{
+    background-color: #337ab7;
+    color: aliceblue;
+
+}
+
+.wsTabItemUnSelect
+{
+    background-color: white;
+    color: #337ab7;
+    border: 2px solid #337ab7;
+
+}
